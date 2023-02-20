@@ -32,4 +32,29 @@ universal 2nd factor security key (U2F)
 2. AWS Command Line Interface (CLI)
 3. AWS Software Developer Kit (SDK)
 
+## Cloudshell
+
+terminal online
+cli:
+aws iam list-users
+aws --version
+cloudshell do not available in all region
+
+## IAM Security Tools
+IAM credential report(account-level)report with all accounts and its credentials
+IAM Access Advisor(user-level)Access advisor show service permission granted to a user and when services were last accessed
+
+## IAM best practices
+1. Don't use root account except setup
+2. don't borrow others credentials(NEVER!)
+3. Assign users to groups and sasign permission to groups
+4. create strong password policy
+5. use MFA
+6. create use Roles for giving permissions to AWS services
+7. Use Access Keys for Programmatic access (CLI/SDK)
+8. IAM Credentials report for Audit permission
+
+
+
+
 
