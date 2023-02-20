@@ -55,6 +55,38 @@ IAM Access Advisor(user-level)Access advisor show service permission granted to 
 7. Use Access Keys for Programmatic access (CLI/SDK)
 8. IAM Credentials report for Audit permission
 
+## EC2
+EC2 = elastic compute cloud = infrastructure as a service
+rent virtual machine EC2
+Store data on virtual drives EBS
+Distributing load accross machine ELB
+Scaling service using auto-scaling group ASG
+
+OS: Mac,Linux, Windows
+configuration
+compute power & core(CPU)
+random-access memory(RAM)
+Space: EBS & EFS
+hardware: EC2 Instance
+Network card: speed, IP
+Firewall rules: security group
+Bootstrap script:EC2 User Data
+bootrstrap : only run once when machine starts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
