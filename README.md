@@ -74,6 +74,24 @@ Bootstrap script:EC2 User Data
 bootrstrap : only run once when machine starts
 
 
+## EC2 instance types
+M5.2xlarge
+M: instance class
+5: generation (improves over time)
+2xLarge:size within the instance class
+
+## security groups
+Firewall rules -> ip/port
+sg live outside the EC2 so EC2 won't know what happened
+not acceessible(timeout) is security group issue, but connection refused is application error
+
+## classic ports
+22= SSH secure shell - log into linux instance
+21 = FTP file transfer protocol - upload file into a file share
+22 = SFTP Secure file transfer protocol (FTP+SSH)
+80 = HTTP 
+443 = HTTPS
+3389 = RDP(remote desktop protocol) log into windows
 
 
 
