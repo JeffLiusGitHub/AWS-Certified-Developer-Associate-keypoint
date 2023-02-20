@@ -8,13 +8,14 @@ Key: Least Privilege principle (don't give more permissions than user needs)
 ## IAM policies structure:
 1. Version
 2. Id
-3. Statement
+3. Statement{
 4. -Sid statement Id
 5. Effect (allow,deny)
 6. principal: policy apply to which role
 7. Action:Action allow or deny
 8. Resource: resource user can use
 9. Condition:when to apply the effect
+}
 
 ## password policy
 Strong passwords (minimum password length, specific character types, upper lower etc)
