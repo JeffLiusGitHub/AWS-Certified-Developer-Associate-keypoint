@@ -93,7 +93,11 @@ not acceessible(timeout) is security group issue, but connection refused is appl
 443 = HTTPS
 3389 = RDP(remote desktop protocol) log into windows
 
+## SSH Summary
 
+SSH=[MAC,Linux,Windows>=10]
+Putty=[allWindows]
+EC2 Instance Connect = [Mac, Linux, Windows]
 
 
 
