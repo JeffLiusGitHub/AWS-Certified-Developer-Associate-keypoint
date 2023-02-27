@@ -99,6 +99,26 @@ SSH=[MAC,Linux,Windows>=10]
 Putty=[allWindows]
 EC2 Instance Connect = [Mac, Linux, Windows]
 
+## Purchasing options
+
+On demand instances - pay by second (highest cost, no upfront payment)
+reserved
+reserved Instances - 72% to ondemand
+convertible reserved instances - 66% can change instance type, instance family, OS Tenancy
+saving plan -72% instance size, OS, tenancy
+spot instances -90% may lose (cost-efficient) can do batch jobs, data analysis, image processing, distributed workloads
+Dedicated host - physical server capacity fully dedicated to your use (compliance requirements, use existing server-bound software licences) most expensive option, (bring your own licence, strong regulatory or compliance needs)
+dedicate instances - may share hardware with other instances,no control over instance placement
+capacity reservations - reserve on demand instances capacity in specific AZ for any duration, no time commitment and no billing discounts, fit for short-term unintrerrupted workloads need be in specific AZ
+
+### summary
+On demand:coming and staying in resort whenever we like, we pay full price
+reserved: like planning ahead and if plan stay for a long time, may get a good discount
+saving plan: pay certain amount, and change room type
+spot instances: most discount, but kicked out at any time
+dedicated host: book entire building
+capacity reservation: book room pay full price even don't stay in
+
 
 
 
