@@ -119,7 +119,20 @@ spot instances: most discount, but kicked out at any time
 dedicated host: book entire building
 capacity reservation: book room pay full price even don't stay in
 
+## EBS
+= elastic Block store/network drive attach to instances
+allow persist data even after instance terminated
+can be mount to one instance at a time
+bound to a specific availability zone
 
+like network USB stick, locked AZ, provisioned capacity
+
+
+## Delete on termination attribute
+->controls ebs behaviour when EC2 instance terminates
+by default, root EBS deleted, other attached EBS not deleted
+
+can be controlled by AWS console and AWS CLI
 
 
 
