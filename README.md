@@ -136,6 +136,20 @@ can be controlled by AWS console and AWS CLI
 
 
 
+## EBS snapshots
+make backup of EBS volume
+recommend
+can copy snapshots across AZ or region
+### Features
+snapshot archive - move snapshot to archieve tier 75% cheaper
+take 24-72 h for restoring archive
+
+recycle bin fir EBS snapshots
+rule for retain deleted snapshots, can recover them after accidental deletion
+
+FSR fast snapshot restore
+full initialization of snapshot with no latency, but costly
+
 
 
 
