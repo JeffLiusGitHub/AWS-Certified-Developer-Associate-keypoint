@@ -151,11 +151,75 @@ FSR fast snapshot restore
 full initialization of snapshot with no latency, but costly
 
 
+## AMI
+build for specific region
+Amazon Machine Image
+customization of EC2 instance
+can add software, configuration, operating system, monitoring
+by using it, can have fast boot and configure time because software is pre-packaged
+
+public AMI, own AMI,marketplace AMI
 
 
+## EC2 Instance store
+
+VM used when need high performance hardware disk
+Better I/O performance
+store will be lost if storage is stopped (ephemeral)
+good for buffer/cache/scratch data/temporary content
+risk for data loss
+backup and replication
+
+## EBS Volume types
+1. gp2/gp3: general purpose SSD balance price and performance
+2. io1/io2:Highest performance SSD mission critical low latency or high throughput workloads
+3. st1 HDD: low cost
+4. sc1 HDD:lowest cost
+
+character: Size, throughput,I/O ops per sec
+GP2 general purpose SSD cost effective storage, low latency
+boot, vm desktop, development test environments
+size from 1G-16T
+GP3 independency set IOPS IO throughput speed
+GP2 cannot
+
+provisioned IOPS
+eg critical business need sustained IOPS performance
+app need more than 16000IOPS
+great database workload
+
+GP2/GP3=>io1/io2 (upgrade)
+4g-16T max 64000Nitro EC2 32000 for normal EC2
+can increase PIOPS independently from storage
+
+##  EBS multi attach
+io1/io2 can do
+higher application availability om cluistered linux application (teradata)
+app must manage concurrent write operation
+up to 16 EC2 instance
+use file system cluster aware
+
+## EFS
+elestic file system
+manage NFS network file system can be mounted on many EC2 can be in the different availability zone
+pay per use
+web serving, data sharing, wordpress
+no windows
+don't need to plan capacity 
+Storage tiers lifecycle management feature move file after N days
+to EFS-IA infrequent access same AZ
+
+EBS vs EFS
+EBS lock AZ 
+one instance except multi attach io1/io2
+to migrate EBS across AZ: take snapshot, restore snapshot to another AZ
+root EBS instance terminated when instance terminated
 
 
-
+EFS across AZ
+only for linux
+costly then EBS
+can leverage EFS-IA for cost saving
 
 
 
