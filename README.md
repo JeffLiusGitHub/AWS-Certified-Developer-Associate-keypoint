@@ -221,6 +221,39 @@ only for linux
 costly then EBS
 can leverage EFS-IA for cost saving
 
+## CloudFront
+=CDN(content delivery Network)
+caching the website content at different edge location to improve the read performance
+improve users experience
+
+216 points (edge locations)
+protect from the DDoS because the point is worldwide (and integration with shield and firewall)
+
+use S3 bucket for distributing files and caching them at the edge
+use OAC Origin Access Control to enhanced security
+CloudFront can be used as an ingress to upload files to S3
+can also custom origin HTTP 
+- Load balancer
+- EC2 instance
+- S3
+- HTTP backend
+
+## CloudFront vs S3 Cross Region Replication
+- cached in the edge, good for static content
+- replicate bucket in different region, files updated real-time, good for dynamic content
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
