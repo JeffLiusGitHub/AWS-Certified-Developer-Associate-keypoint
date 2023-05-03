@@ -242,12 +242,46 @@ can also custom origin HTTP
 - cached in the edge, good for static content
 - replicate bucket in different region, files updated real-time, good for dynamic content
 
+A VPC Connection (Virtual Private Cloud Connection) is a network connection that connects two or more Amazon Virtual Private Clouds (VPCs). Amazon VPC is a service provided by Amazon Web Services (AWS) that allows you to launch AWS resources in your own defined virtual network.
+
+- Edge location - vpc - EC2 (public)
+- Edge location - vpc - load balancer (public) - EC2 private
+
+can do geo restriction
+- AllowList
+- blockList
 
 
+## CloudFront - pricing
+
+can reduce the number of edge location for cost reduction
+- all regions - best performance
+- class 200 - exclude most expensive regions
+- class 100 - only least expensive regions
 
 
+## global accelerator
 
+- unicast IP (one server holds one IP)
+- Anycast IP (all servers hold same IP, client holds the nearest one) 
+any location will send to the closest edge location then go through to the ALB (application load balancer) which is private AWS line (faster) lowest latency
 
+## Global Accelerator vs CloudFront
+same
+- both use Global network and edge location
+- can use shield DDoS protection
+difference
+cloutFront
+- improve performance for both cacheable content (img video)
+- Dynamic Content
+- content served at edge
+
+global Accelerator
+- improve perfornamce use TCP UDP
+- no cache but proxying packets at more AWS regions
+- fit for non HTTP, like UDP (gaming) lot (MQTT) voice over ip
+- http use static ip
+- http require deterministic, fast regional failover
 
 
 
